@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Nest Chat</h1>
+
+    <div>
+        <h2>채팅창 목록</h2>
+        <ul id="rooms">
+            
+        </ul>
+    </div>
+
+    <hr>    
+    <div>
+        <h2>현재 채팅방</h2>
+        <div id="currentChatRoom"></div>
+    </div>
+    <div id="chat"></div>
+    <input type="text" id="message" placeholder="메시지를 입력햇">
+    <button onclick="sendMessage()">전송</button>
+    <button onclick="createRoom()">방 만들기</button>
+
+    <div>
+        <h2>공지</h2>
+        <div id="notice"></div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.js"></script>
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script src="http://localhost:3000/script.js"></script>
+
+</html>
