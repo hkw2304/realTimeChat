@@ -35,6 +35,7 @@
     }
 
     
+    
     socket.on('notice', (data) => {
         $('#notice').append(`<div>${data.message}</div>`);
     })
