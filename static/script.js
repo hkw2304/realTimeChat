@@ -34,6 +34,7 @@
         $('#currentChatRoom').append(`<h2>${currentRoom}</h2>`);
     }
 
+    
     socket.on('notice', (data) => {
         $('#notice').append(`<div>${data.message}</div>`);
     })
